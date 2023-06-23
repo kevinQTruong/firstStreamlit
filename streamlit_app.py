@@ -4,6 +4,53 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
+st.header("st.checkbox- Day 12")
+
+st.write("What would you like to order?")
+
+icecream = st.checkbox("Ice Cream")
+coffee = st.checkbox("Coffee")
+cola = st.checkbox("Cola")
+
+if icecream:
+    st.write("You ordered ice cream")
+
+if coffee:
+    st.write("You ordered coffee")
+
+if cola:
+    st.write("You ordered cola")
+
+st.header("st.multiselect- Day 11")
+
+st.subheader("Multiselect")
+
+options = st.multiselect(
+    "What are your favorite colors",
+    ["Green", "Yellow", "Red", "Blue"],
+    ["Yellow", "Red"],
+)
+
+st.write("You selected:", options)
+
+st.header("st.selectbox- Day 10")
+
+st.subheader("Selectbox")
+
+option = st.selectbox(
+    "How would you like to be contacted?", ("Email", "Home phone", "Mobile phone")
+)
+
+st.write("You selected:", option)
+
+st.header("st.line_chart - Day 9")
+
+st.subheader("Line chart")
+
+chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
+
+st.line_chart(chart_data)
+
 st.header("st.slider - Day 8")
 
 st.subheader("Slider")
