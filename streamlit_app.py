@@ -5,6 +5,10 @@ import pandas as pd
 import streamlit as st
 from streamlit_pandas_profiling import st_profile_report
 
+st.header("Secret - Day 17")
+
+st.write(st.secrets["message"])
+
 st.header("Day 16 - Customizing the theme of Streamlit apps")
 
 st.write("Contents of the `.streamlit/config.toml` file of this app")

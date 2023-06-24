@@ -1,3 +1,4 @@
 askthedocapp
 .mypy_cache
 .vscode
+secrets.toml
