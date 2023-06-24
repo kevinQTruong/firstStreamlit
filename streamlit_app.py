@@ -3,7 +3,6 @@ from datetime import time, datetime
 import altair as alt
 import pandas as pd
 import streamlit as st
-import pandas_profiling
 from streamlit_pandas_profiling import st_profile_report
 
 st.header("Day 16 - Customizing the theme of Streamlit apps")
