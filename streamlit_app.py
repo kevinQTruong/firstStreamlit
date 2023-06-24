@@ -3,6 +3,47 @@ from datetime import time, datetime
 import altair as alt
 import pandas as pd
 import streamlit as st
+import pandas_profiling
+from streamlit_pandas_profiling import st_profile_report
+
+st.header("Day 16 - Customizing the theme of Streamlit apps")
+
+st.write("Contents of the `.streamlit/config.toml` file of this app")
+
+st.code(
+    """
+[theme]
+primaryColor="#F39C12"
+backgroundColor="#2E86C1"
+secondaryBackgroundColor="#AED6F1"
+textColor="#FFFFFF"
+font="monospace"
+"""
+)
+
+number = st.sidebar.slider("Select a number:", 0, 10, 5)
+st.write("Selected number from slider widget is:", number)
+
+st.header("st.latex - Day 15")
+
+st.latex(
+    r"""
+    a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
+    \sum_{k=0}^{n-1} ar^k =
+    a \left(\frac{1-r^{n}}{1-r}\right)
+    """
+)
+
+
+# st.header("streamlit_pandas_profiling - Day 14")
+
+# df = pd.read_csv(
+#     "https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv"
+# )
+
+# pr = df.profile_report()
+
+# st_profile_report(pr)
 
 st.header("st.checkbox- Day 12")
 

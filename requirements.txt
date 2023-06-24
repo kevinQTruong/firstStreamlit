@@ -6,3 +6,4 @@ tiktoken
 numpy
 altair
 pandas
+streamlit_pandas_profiling
