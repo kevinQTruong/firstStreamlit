@@ -7,3 +7,4 @@ numpy
 altair
 pandas
 streamlit_pandas_profiling
+pandas_profiling
